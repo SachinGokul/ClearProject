@@ -3,9 +3,7 @@ package BaseClass;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
-
 import GenericFunctions.GenericFunctions;
-import Utilities.CommonStrings;
 import Utilities.PropertyReader;
 
 public class BaseTest {
@@ -23,7 +21,7 @@ public class BaseTest {
 	@AfterClass
 	public void tearDown()
 	{
-		
+		driver.quit();
 	}
 
 }
